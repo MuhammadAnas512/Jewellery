@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eterna Jewels - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="bg-white border-b border-gray-100 fixed top-9 z-50 w-full">
+    <nav class="max-w-7xl mx-auto px-6 relative">
+
+      <!-- Top Bar -->
+      <div class="flex h-16 items-center justify-between">
+
+        <!-- Logo -->
+        <a href="index.html" class="text-2xl font-serif text-gray-900">
+          Eterna <span class="text-amber-600">Jewels</span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex items-center space-x-10 text-gray-700">
+          <a href="index.html" class="hover:text-amber-600 hover:decoration-none">Home</a>
+          <a href="shop.php" class="hover:text-amber-600">Shop</a>
+          <a href="collections.php" class="hover:text-amber-600">Collections</a>
+          <a href="about.html" class="hover:text-amber-600">About</a>
+          <a href="contact.html" class="hover:text-amber-600">Contact</a>
+        </div>
+
+        <!-- Icons + Hamburger (Top Navbar only) -->
+        <div class="flex items-center space-x-4 text-gray-700 text-lg">
+
+          <!-- Icons (always visible) -->
+          <a href="#"><i class="fa-solid fa-magnifying-glass hover:text-amber-600"></i></a>
+          <a href="adminlogin.html"><i class="fa-regular fa-user hover:text-amber-600"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping hover:text-amber-600"></i></a>
+
+          <!-- Hamburger (mobile only) -->
+          <button id="menuBtn" class="lg:hidden text-2xl">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Mobile Menu (ONLY LINKS, NO ICONS) -->
+      <div id="mobileMenu"
+        class="hidden lg:hidden absolute top-16 left-0 w-full bg-white border-t border-gray-100 shadow-lg">
+        <div class="px-6 py-6 space-y-4 text-gray-700 font-medium">
+          <a href="index.html" class="block hover:text-amber-600">Home</a>
+          <a href="shop.php" class="block hover:text-amber-600">Shop</a>
+          <a href="collections.php" class="block hover:text-amber-600">Collections</a>
+          <a href="about.html" class="block hover:text-amber-600">About</a>
+          <a href="contact.html" class="block hover:text-amber-600">Contact</a>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+
+
+  <!-- Marquee -->
+  <div class="marquee top-marquee bg-white py-1 "
+    style="position: fixed;  top: 0; left: 0; width: 100%; z-index: 9999;">
+    <marquee style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);" behavior="scroll" direction="left">
+      Welcome to Eterna Jewels - Discover the Art of True Luxury | Exclusive Offers | Handcrafted Jewelry • Premium Gold
+      & Diamonds • Exclusive Designs • Limited Edition Pieces • Shop the Latest Arrivals | New Arrivals Weekly
+    </marquee>
+  </div>
+
+  <!-- Push page content down so it doesn't hide behind the marquee -->
+  <div style="margin-top: 30px;"></div>
+
+
+  <!-- Push page content down so it doesn't hide behind the marquee -->
+
+
+  <div style="width: 100%; height: 800px;" id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/d1.jpg" class="d-block  " style="width: 100% ; height: 850px ;background-size:100% 100%"
+          alt="...">
+
+        <div class="carousel-caption">
+          <div class="hero-buttons">
+            <a href="shop.php" class="btn-primary">Shop Now</a>
+            <a href="collections.php" class="btn-secondary">Explore Collections</a>
+          </div>
+          <h5>Diamond Collection</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/b3.jpg" class="d-block " style="width: 100% ; height: 850px; background-size:100% 100% ;"
+          alt="...">
+        <div class="carousel-caption">
+          <div class="hero-buttons">
+            <a href="shop.php" class="btn-primary">Shop Now</a>
+            <a href="collections.php" class="btn-secondary">Explore Collections</a>
+          </div>
+          <h5 class="text-black">Gold Collection</h5>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/l3.jpg" class="d-block " style="width: 100% ; height: 850px; background-size:100% 100%"
+          alt="...">
+        <div class="carousel-caption ">
+          <div class="hero-buttons">
+            <a href="shop.php" class="btn-primary">Shop Now</a>
+            <a href="collections.php" class="btn-secondary">Explore Collections</a>
+          </div>
+          <h5>Jewellery Collection</h5>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+
+
+
+
+
+  <!-- Signature Collections -->
+  <section data-aos="zoom-out" class="collections">
+    <div class="container">
+      <h2>sɪɢɴᴀᴛᴜʀᴇ ᴄᴏʟʟᴇᴄᴛɪᴏɴ​</h2>
+      <div class="collection-grid">
+        <div class="collection-card">
+          <img src="images/R.jpg" alt="Bridal Collection">
+          <h3>Jewellery Aura</h3>
+          <a href="collections.php#bridal" class="btn-link">View Collection </a>
+        </div>
+        <div class="collection-card">
+          <img src="images/gold.jpg" alt="Gold Essentials">
+          <h3>Gold Collection</h3>
+          <a href="collections.php#gold" class="btn-link">View Collection </a>
+        </div>
+        <div class="collection-card">
+          <img src="images/dd.jpg" alt="Diamond Edition">
+          <h3>Diamond Aura</h3>
+          <a href="collections.php#diamond" class="btn-link">View Collection </a>
+        </div>
+        <div class="collection-card">
+          <img src="images/men.jpg" alt="Men’s Luxury">
+          <h3>Mens Collection</h3>
+          <a href="collections.php#mens" class="btn-link">View Collection </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Story Teaser -->
+  <section data-aos="fade-right" class="brand-story">
+    <div class="container">
+      <div class="story-content">
+        <div class="story-image">
+          <img
+            src="https://blogapi.perrian.com/wp-content/uploads/2022/03/5-Must-Have-Diamond-Jewellery-Pieces-You-Cant-Ignore.jpg"
+            alt="Artisan at work">
+        </div>
+        <div class="story-text">
+          <h2>Where Craft Meets Passion</h2>
+          <p>Our journey began with a simple belief: that every piece of jewelry tells a story. For generations, our
+            artisans have poured their hearts into crafting pieces that blend timeless elegance with modern
+            sophistication. Each design is a testament to our commitment to quality, innovation, and the art of fine
+            jewelry making.</p>
+          <a href="about.html" class="btn-primary">Read Our Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Sellers -->
+  <section class="best-sellers">
+    <div class="container">
+      <h2 data-aos="fade-down">Best Sellers​</h2>
+      <div class="product-grid">
+        <div class="product-card" data-aos="fade-right">
+          <img src="images/gn.jpg" background-size:100% 100% alt="Best Seller 1">
+          <h3>Gold Necklace</h3>
+          <p>Rs.100,000</p>
+          <button class="btn-add" onclick="location.href='collections.php'">
+            View More
+          </button>
+        </div>
+        <div class="product-card" data-aos="fade-left">
+          <img src="images/mens.jpg" alt="Product 2">
+          <h3>Diamond Ring</h3>
+          <p>Rs.80,000</p>
+          <button class="btn-add" onclick="location.href='collections.php'">
+            View More
+          </button>
+        </div>
+        <div class="product-card" data-aos="fade-right">
+          <img src="images/brac.jpg" alt="Product 3">
+          <h3>Silver Bracelet</h3>
+          <p>Rs.100,000</p>
+          <button class="btn-add" onclick="location.href='collections.php'">
+            View More
+          </button>
+        </div>
+        <div class="product-card" data-aos="fade-left">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/51ddbc61e4b0bf85e2f4e72d/1703036512813-FQBAV23MBMFSHD7T11ZL/canadian-mined-diamond-earrings.JPG?format=1000w"
+            alt="Product 4">
+          <h3>Earrings</h3>
+          <p>Rs.44,499</p>
+          <button class="btn-add" onclick="location.href='collections.php'">
+            View More
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Video Section -->
+  <section class="video-section">
+    <div style="background: rgb(255, 255, 255); margin-top: 50px; position: relative;"></div>
+    <video autoplay muted loop>
+      <source src="images/video.mp4" type="video/mp4">
+      </div>
+    </video>
+    <div class="video-overlay">
+      <h2>Elegance in Every Detail</h2>
+    </div>
+  </section>
+
+  <!-- new added here  -->
+  <section style="margin-top: 40px;">
+    <div class="heading">
+      <h2 data-aos="fade-down">
+        𝗦𝗵𝗼𝗽 𝗯𝘆 𝗖𝗼𝗹𝗹𝗲𝗰𝘁𝗶𝗼𝗻</h2>
+    </div>
+    <!-- From Uiverse.io by arshshaikh06 -->
+    <div class="containerr">
+
+      <div class="palette">
+        <div class="iimg"><a href="collections.php#rings"><span>Rings</span></div></a>
+        <div class="iimg"><a href="collections.php#diamond"><span>Diamond Collection</span></div></a>
+        <div class="iimg"><a href="collections.php#gold"><span>Gold Collection</span></div></a>
+        <div class="iimg"><a href="shop.php"><span>Minimalist Collection</span></div></a>
+        <div class="iimg"><a href="collections.php#chain"><span> Chains</span></div></a>
+      </div>
+
+    </div>
+    </div>
+
+  </section>
+
+
+
+
+  <!-- Testimonials -->
+  <div class="test">
+    <section class="testimonials">
+      <div class="container">
+        <h2>Customer Reviews</h2>
+        <div class="slider">
+          <div class="list">
+
+            <!-- ORIGINAL SET -->
+            <div class="item">
+              <div class="card">
+                <img src="images/l.jpg" alt="">
+                <h3>Ayesha Khan</h3>
+                <p>Beautiful jewelry with excellent finishing. Loved the quality!</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card">
+                <img src="images/sett.jpg" alt="">
+                <h3>Muhammad Ali</h3>
+                <p>Bought a ring for my wife and she absolutely loved it.</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card">
+                <img src="images/brac.jpg" alt="">
+                <h3>Sana Ahmed</h3>
+                <p>Elegant designs and reasonable prices. Highly recommended.</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card">
+                <img src="images/ddd.jpg" alt="">
+                <h3>Hassan Raza</h3>
+                <p>Very professional service and fast delivery.</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card">
+                <img src="images/a.jpg" alt="">
+                <h3>Fatima Noor</h3>
+                <p>Perfect jewelry for weddings and formal occasions.</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card">
+                <img src="images/brac.jpg" alt="">
+                <h3>Ahmed Farooq</h3>
+                <p>Trusted online jewelry store in Pakistan. Great experience.</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+
+            <!-- DUPLICATE SET FOR INFINITE LOOP -->
+            <div class="item">
+              <div class="card">
+                <img src="images/gn.jpg" alt="">
+                <h3>Ayesha Khan</h3>
+                <p>Beautiful jewelry with excellent finishing. Loved the quality!</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card">
+                <img src="images/hoop.jpg" alt="">
+                <h3>Muhammad Ali</h3>
+                <p>Bought a ring for my wife and she absolutely loved it.</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card">
+                <img src="images/j.jpg" alt="">
+                <h3>Sana Ahmed</h3>
+                <p>Elegant designs and reasonable prices. Highly recommended.</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card">
+                <img src="images/k.jpg" alt="">
+                <h3>Hassan Raza</h3>
+                <p>Very professional service and fast delivery.</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card">
+                <img src="images/n.jpg" alt="">
+                <h3>Fatima Noor</h3>
+                <p>Perfect jewelry for weddings and formal occasions.</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card">
+                <img src="images/n2.jpg" alt="">
+                <h3>Ahmed Farooq</h3>
+                <p>Trusted online jewelry store in Pakistan. Great experience.</p>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+  </div>
+  </section>
+  </div>
+
+  <!-- here tailwind csss -->
+
+
+  <section class="max-w-4xl mx-auto px-4 py-20">
+    <h2 class="text-3xl md:text-4xl font-normal mb-10 text-center ">
+      FAQ'S
+    </h2>
+
+    <div class="space-y-4">
+
+      <div class="border-b border-black-200/10">
+        <button class="faq-btn w-full flex justify-between items-center py-5 text-left text-lg font-medium">
+          Is your jewellery original?
+          <span class="text-2xl">+</span>
+        </button>
+        <div class="faq-content hidden pb-5 text-black/70">
+          Yes, all our jewellery is 100% original and carefully quality-checked before dispatch.
+        </div>
+      </div>
+
+      <div class="border-b border-white/10">
+        <button class="faq-btn w-full flex justify-between items-center py-5 text-left text-lg font-medium">
+          Do you offer Cash on Delivery (COD)?
+          <span class="text-2xl">+</span>
+        </button>
+        <div class="faq-content hidden pb-5 text-black/80">
+          Yes, we provide Cash on Delivery across all major cities in Pakistan.
+        </div>
+      </div>
+
+      <div class="border-b border-white/10">
+        <button class="faq-btn w-full flex justify-between items-center py-5 text-left text-lg font-medium">
+          How long does delivery take?
+          <span class="text-2xl">+</span>
+        </button>
+        <div class="faq-content hidden pb-5 text-black/70">
+          Delivery usually takes 3–5 working days, depending on your location.
+        </div>
+      </div>
+
+      <div class="border-b border-white/10">
+        <button class="faq-btn w-full flex justify-between items-center py-5 text-left text-lg font-medium">
+          Can jewellery be damaged by water or perfume?
+          <span class="text-2xl">+</span>
+        </button>
+        <div class="faq-content hidden pb-5 text-black/70">
+          To maintain shine and quality, we recommend keeping jewellery away from water, perfume, and chemicals.
+        </div>
+      </div>
+
+      <div class="border-b border-white/10">
+        <button class="faq-btn w-full flex justify-between items-center py-5 text-left text-lg font-medium">
+          What is your return or exchange policy?
+          <span class="text-2xl">+</span>
+        </button>
+        <div class="faq-content hidden pb-5 text-black/70">
+          You can request a return or exchange within 7 days of delivery (terms & conditions apply).
+        </div>
+      </div>
+
+      <div class="border-b border-white/10">
+        <button class="faq-btn w-full flex justify-between items-center py-5 text-left text-lg font-medium">
+          Will the product look exactly like the pictures?
+          <span class="text-2xl">+</span>
+        </button>
+        <div class="faq-content hidden pb-5 text-black/70">
+          We try our best to display accurate images. Minor color differences may occur due to lighting or screen
+          settings.
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- Instagram Gallery -->
+  <section class="instagram-gallery">
+    <div class="container">
+      <h2>Our Gallery<a class="nav-link" href="https://www.instagram.com/" target="_blank"><i
+            class="fa-brands fa-instagram"></i>
+        </a>
+
+      </h2>
+      <div data-aos="zoom-in" class="gallery-grid">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/how-to-find-the-value-of-antique-jewelry-veranda-68bee8fb18e1e.jpg?crop=0.668xw:1.00xh;0.172xw,0&resize=1120:*"
+          alt="Instagram 1">
+        <img
+          src="https://www.pakstyle.pk/cdn/shop/files/p17893-classic-style-womens-jewelry-set_1.jpg?v=1759480711&width=1128"
+          alt="Instagram 2">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Instagram 3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj17DJAkIXjFALD4O7gYxeYv1CVlj5fMue8PZrINGB2A&s"
+          alt="Instagram 4">
+        <img src="https://m.media-amazon.com/images/I/81kcuwwfrFL._AC_SL1500_.jpg" alt="Instagram 5">
+        <img
+          src="https://images.unsplash.com/photo-1693212793204-bcea856c75fe?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGlhbW9uZCUyMGVhcnJpbmdzfGVufDB8fDB8fHww"
+          alt="Instagram 1">
+        <img src="https://t3.ftcdn.net/jpg/15/39/84/34/360_F_1539843444_yEnQDMPEGw3izgVLuyRsPvGm7aI3LGHA.jpg"
+          alt="Instagram 2">
+        <img src="https://www.caratlane.com/blog/wp-content/uploads/2025/05/gold-diamond-earrings.jpg"
+          alt="Instagram 3">
+        <img src="https://s3-ap-southeast-2.amazonaws.com/assets1.brilliyond.com.au/images/pearl-jewellery-natural.png"
+          alt="Instagram 5">
+        <img
+          src="https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,fl_progressive,q_auto,w_1024/671f6ff9a64c04001d44054d.jpg"
+          alt="Instagram 5">
+        <img
+          src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Instagram 5">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Instagram 6">
+      </div>
+      <div class="flex justify-center mt-8">
+        <button class="px-5 py-2  bg-black text-white rounded hover:bg-amber-700 rounded-xl ">
+          Follow Us
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-6">
+      <div>
+        <h3 class="font-bold text-lg mb-4">Eterna Jewels</h3>
+        <p>Handcrafted luxury jewelry for every occasion.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-lg mb-4">Quick Links</h3>
+        <ul>
+          <li><a href="index.html" class="hover:text-amber-600">Home</a></li>
+          <li><a href="shop.php" class="hover:text-amber-600">Shop</a></li>
+          <li><a href="collections.php" class="hover:text-amber-600">Collections</a></li>
+          <li><a href="story.html" class="hover:text-amber-600">About</a></li>
+          <li><a href="contact.html" class="hover:text-amber-600">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-lg mb-4">Policies</h3>
+        <ul>
+          <li><a href="terms.html" class="hover:text-amber-600">Terms & Conditions</a></li>
+          <li><a href="refund.html" class="hover:text-amber-600">Refund Policy</a></li>
+          <li><a href="privacy.html" class="hover:text-amber-600">Privacy Policy</a></li>
+          <li><a href="shipping.html" class="hover:text-amber-600">Shipping Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-lg mb-4">Newsletter</h3>
+        <p>Subscribe for exclusive offers and updates</p>
+        <input type="email" placeholder="Your Email" class="mt-2 px-3 py-2 rounded text-gray-900 w-full">
+        <button class="mt-2 bg-amber-600 text-white px-4 py-2 rounded hover:bg-amber-700">Subscribe</button>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+
+  <script>
+    const buttons = document.querySelectorAll(".faq-btn");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector("span");
+
+        content.classList.toggle("hidden");
+        icon.textContent = icon.textContent === "+" ? "−" : "+";
+      });
+    });
+  </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
