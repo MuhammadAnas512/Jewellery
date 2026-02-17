@@ -59,7 +59,7 @@ $product = mysqli_fetch_assoc($res);
 
                     <!-- Icons (always visible) -->
                     <a href="#"><i class="fa-solid fa-magnifying-glass hover:text-amber-600"></i></a>
-                    <a href="adminlogin.html"><i class="fa-regular fa-user hover:text-amber-600"></i></a>
+                    <a href="adminlogin.php"><i class="fa-regular fa-user hover:text-amber-600"></i></a>
                     <a href="#"><i class="fa-solid fa-cart-shopping hover:text-amber-600"></i></a>
 
                     <!-- Hamburger (mobile only) -->
@@ -139,7 +139,7 @@ $product = mysqli_fetch_assoc($res);
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 mt-16">
+    <footer class="bg-gray-900 text-white py-12">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-6">
             <div>
                 <h3 class="font-bold text-lg mb-4">Eterna Jewels</h3>
@@ -147,23 +147,28 @@ $product = mysqli_fetch_assoc($res);
             </div>
             <div>
                 <h3 class="font-bold text-lg mb-4">Quick Links</h3>
-                <ul class="space-y-2">
-                    <li><a href="#" class="hover:text-amber-600">Home</a></li>
-                    <li><a href="#" class="hover:text-amber-600">Shop</a></li>
-                    <li><a href="#" class="hover:text-amber-600">Collections</a></li>
+                <ul>
+                    <li><a href="index.html" class="hover:text-amber-600">Home</a></li>
+                    <li><a href="shop.php" class="hover:text-amber-600">Shop</a></li>
+                    <li><a href="collections.php" class="hover:text-amber-600">Collections</a></li>
+                    <li><a href="about.html" class="hover:text-amber-600">About</a></li>
+                    <li><a href="contact.html" class="hover:text-amber-600">Contact</a></li>
                 </ul>
             </div>
             <div>
                 <h3 class="font-bold text-lg mb-4">Policies</h3>
-                <ul class="space-y-2">
-                    <li>Refund Policy</li>
-                    <li>Privacy Policy</li>
+                <ul>
+                    <li><a href="terms.html" class="hover:text-amber-600">Terms & Conditions</a></li>
+                    <li><a href="refund.html" class="hover:text-amber-600">Refund Policy</a></li>
+                    <li><a href="privacy.html" class="hover:text-amber-600">Privacy Policy</a></li>
+                    <li><a href="shipping.html" class="hover:text-amber-600">Shipping Policy</a></li>
                 </ul>
             </div>
             <div>
                 <h3 class="font-bold text-lg mb-4">Newsletter</h3>
-                <input type="email" placeholder="Email" class="w-full px-3 py-2 rounded text-black mb-2">
-                <button class="bg-amber-600 w-full py-2 rounded">Subscribe</button>
+                <p>Subscribe for exclusive offers and updates</p>
+                <input type="email" placeholder="Your Email" class="mt-2 px-3 py-2 rounded text-gray-900 w-full">
+                <button class="mt-2 bg-amber-600 text-white px-4 py-2 rounded hover:bg-amber-700">Subscribe</button>
             </div>
         </div>
     </footer>

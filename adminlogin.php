@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eterna Jewels - Home</title>
+  <title>Sign up</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -119,9 +119,9 @@
           <h3 class="font-bold text-lg mb-4">Quick Links</h3>
           <ul>
             <li><a href="index.html" class="hover:text-amber-600">Home</a></li>
-            <li><a href="shop.html" class="hover:text-amber-600">Shop</a></li>
-            <li><a href="collections.html" class="hover:text-amber-600">Collections</a></li>
-            <li><a href="story.html" class="hover:text-amber-600">About</a></li>
+            <li><a href="shop.php" class="hover:text-amber-600">Shop</a></li>
+            <li><a href="collections.php" class="hover:text-amber-600">Collections</a></li>
+            <li><a href="about.html" class="hover:text-amber-600">About</a></li>
             <li><a href="contact.html" class="hover:text-amber-600">Contact</a></li>
           </ul>
         </div>

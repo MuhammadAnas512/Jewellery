@@ -122,7 +122,7 @@
                   <?php echo number_format($row['price'], 2); ?>
                 </p>
               </a>
-              <button class="btn-add" onclick="location.href='cart.html'">
+              <button class="btn-add" onclick="location.href='collections.php'">
                 <i class="fa-solid fa-cart-shopping"></i>
                 Buy Now </button>
 
@@ -150,9 +150,9 @@
         <h3 class="font-bold text-lg mb-4">Quick Links</h3>
         <ul>
           <li><a href="index.html" class="hover:text-amber-600">Home</a></li>
-          <li><a href="shop.html" class="hover:text-amber-600">Shop</a></li>
-          <li><a href="collections.html" class="hover:text-amber-600">Collections</a></li>
-          <li><a href="story.html" class="hover:text-amber-600">About</a></li>
+          <li><a href="shop.php" class="hover:text-amber-600">Shop</a></li>
+          <li><a href="collections.php" class="hover:text-amber-600">Collections</a></li>
+          <li><a href="about.html" class="hover:text-amber-600">About</a></li>
           <li><a href="contact.html" class="hover:text-amber-600">Contact</a></li>
         </ul>
       </div>
